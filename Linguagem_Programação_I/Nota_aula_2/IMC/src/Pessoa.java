@@ -24,6 +24,7 @@ public class Pessoa {
     }
 
     public double calcularIMC() {
+        // return this.peso / (this.altura * this.altura);
         return getPeso() / (getAltura() * getAltura());
     }
 }
