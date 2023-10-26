@@ -1,7 +1,7 @@
 public abstract class Produtos {
+  //Atributos
   protected String nome;
   protected double preco;
-  protected double valor;
 
   public String getNome() {
     return nome;
@@ -15,6 +15,5 @@ public abstract class Produtos {
   public void setPreco(double preco) {
     this.preco = preco;
   }
-  public abstract double getValor();
-  
+  abstract double getPrecoFinal();
 }

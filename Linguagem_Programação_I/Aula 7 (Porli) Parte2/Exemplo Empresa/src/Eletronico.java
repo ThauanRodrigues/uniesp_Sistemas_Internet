@@ -1,13 +1,6 @@
-public class Eletronico extends Produtos implements Promocao {
-
+public class Eletronico extends Produtos{
   @Override
-  public float promocao() {
-    return 10;
+  double getPrecoFinal() {
+    return getPreco() * 0.9; //desconto 10%
   }
- 
-  @Override
-  public double getValor() {
-    return valor * (1 - promocao()  / 100);
-  }
-
 }
