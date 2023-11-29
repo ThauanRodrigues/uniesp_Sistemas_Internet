@@ -1,0 +1,10 @@
+Elabore um código para este problema: 
+Todos são instrumentos musicais (Classe PAI). Eles são cadastrados no sistema com nome e
+código. Porém, Existem a categoria de instrumentos de corda e de sopro. Os instrumentos
+de corda, podem precisar trocar a corda. Estes Instrumentos precisam cadastrar a
+quantidade de cordas.
+
+obs::
+Harpa (tocar, afinar, troca corda)
+Violão (tocar, afinar, troca corda)
+Flauta (tocar, afinar)

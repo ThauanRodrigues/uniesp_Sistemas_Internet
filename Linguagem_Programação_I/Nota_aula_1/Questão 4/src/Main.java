@@ -49,5 +49,6 @@ public class Main {
                     System.out.println("Opção inválida.");
             }
         }
+        sc.close();
     }
 }
