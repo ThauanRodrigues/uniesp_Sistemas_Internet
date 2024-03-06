@@ -1,0 +1,94 @@
+Tenho um DER chamado pedido e nele tem as seguintes informações: Uma tabela como nome Funcionário e com os seguintes atributos: IDdoFuncionario com tipo int (11) PK, Nome com tipo varchar (10), Sobrenome com tipo varchar (20), Cargo com tipo varchar (30), Tratamento com tipo varchar (25), DatadeNasciemento com tipo date, DatadeContratacao com tipo date,  Endereco com tipo varchar (60), Cidade com tipo varchar (15), Regiao com tipo varchar (15), CEP com tipo varchar (10), Pais com tipo varchar (15), TelefoneResidencial com tipo varchar (24), Ramal com tipo varchar (4), Foto com tipo varchar (15), Supervisor com tipo int (15) FK. Tenho outra tabela chamada Pedidos  com os seguintes atributos:IDdoPedido com tipo int (11) PK, IDdoFuncionario com tipo int (11) FK ,  IDCliente int (11) FK , DatadoPedido com tipo date, DatadaEntrega com tipo date,  DatadeEnvio com tipo date, IDdaTransportadora com tipo int (11) FK,  Frete com tipo deciamal (19,4),NomedoDestinario com tipo varchar (40), EnderecodoDestinario com tipo varchar (60), CidadedeDestino com tipo varchar (15), RegiaoeDestino com tipo varchar (15), CEPdoDestino com tipo varchar (10), PaisdoDestino com tipo varchar (15). Outra tabela com nome Clientes com os atributos: IDCliente com tipo int (11) PK, CodigodoCliente com tipo varchar (5), NomedaEmpresa com tipo varchar (40), NomedoContato com tipo varchar (30), CargodoContato com tipo varchar (30), Endereco com tipo varchar (60),  Cidade com tipo varchar (15), Regiao com tipo varchar (15), CEP com tipo varchar (10), Pais com tipo varchar (15), Telefone com tipo varchar (24), Fax com tipo varchar (24). Outra tabela chamada detalhe_do_pedido com os atributos: IDDetalhe_do_Produto com tipo int (11) PK, NumerodoPedido com tipo int (11) FK, CodigodoProduto com tipo int (11) FK, PrecoUnitario com tipo int (11) FK, Quantidade com tipo int (11) FK, Desconto com tipo int (11) FK.  Outra tabela chamada Produtos com os atributos: CodigodoProduto com tipo int (11) PK, NomedoProduto com tipo varchar (40), IDdoFornecedor com tipo int (11) FK, IDdaCategoria com tipo int (11) FK, QuantidaPorUnidade com tipo varchar (25),  PrecoUnitario com tipo decimal (19,4) FK, UnidadesEmEstoque com tipo int (11) FK, UnidadesPedidas com tipo int (11) FK, NiveldeReposicao com tipo int (11) FK,  Descontinuado com tipo int (11) FK. Outra tabela chamada Fornecedores com os atributos: IDFornecedores com tipo int (11) PK,  NomedaEmpresa com tipo varchar (40), NomedoContato com tipo varchar (30), CargodoConato com tipo varchar (30), Endereco com tipo varchar (60),  Cidade com tipo varchar (15), Regiao com tipo varchar (15), CEP com tipo varchar (10), Pais com tipo varchar (15), Telefone com tipo varchar (24), Fax com tipo varchar (24), HomePage com tipo text. Outra tabela com nome Categorias com os seguintes atributos: IDCategorias com tipo int (11) PK, NomedaCategoria com tipo varchar (15), Descricao com tipo varchar (40), Figura com tipo varchar (15). Outra tabela chamada Transportadora com os atributos: IDdaTransportadora com tipo int (11) PK, NomedaEmpresa com tipo varchar (40), Telefone com tipo varchar (15). 
+
+
+
+
+    Quantas tabelas tem neste banco de dados?
+        Existem oito tabelas no banco de dados.
+
+    Quais as tabelas têm mais chave estrangeira?
+        As tabelas que têm mais chaves estrangeiras são "Pedidos" e "Produtos", ambas com três chaves estrangeiras cada.
+
+    Quais as tabelas que não têm chave estrangeira?
+        As tabelas "Clientes", "Transportadora" e "Categorias" não têm chaves estrangeiras.
+
+    Qual a chave primária da tabela "Clientes"?
+        A chave primária da tabela "Clientes" é "IDCliente".
+
+    Qual a chave primária da tabela "Produtos"?
+        A chave primária da tabela "Produtos" é "CodigodoProduto".
+
+    Qual o tipo de dado que é armazenado no campo Endereco da tabela "Cliente"?
+        O campo "Endereco" da tabela "Clientes" armazena dados do tipo varchar (60).
+
+    O campo Telefone aparece em quantas tabelas? Quais os nomes delas?
+        O campo "Telefone" aparece em três tabelas: "Funcionario", "Clientes" e "Transportadora".
+
+    Qual a tabela que tem mais campos? Quantos são?
+        A tabela "Funcionario" tem 17 campos.
+
+    Qual a tabela que tem menos campos? Quantos são?
+        A tabela "Transportadora" tem 3 campos.
+
+    Qual a tabela que se relaciona com a tabela “transportadoras”?
+        A tabela "Pedidos" se relaciona com a tabela "Transportadora" através da chave estrangeira "IDdaTransportadora".
+
+    Qual a chave primária da tabela “Transportadoras”?
+        A chave primária da tabela "Transportadoras" é "IDdaTransportadora".
+
+    Qual a chave primaria da tabela “Detalhes_do_pedido”?
+        A chave primária da tabela "Detalhe_do_pedido" é "IDDetalhe_do_Produto".
+
+    Qual a chave estrangeira da tabela “Cliente”?
+        A chave estrangeira da tabela "Clientes" é "IDCliente" e está presente na tabela "Pedidos".
+
+    Qual a chave estrangeira da tabela “Categorias”?
+        A chave estrangeira da tabela "Categorias" é "IDdaCategoria" e está presente na tabela "Produtos".
+
+    Qual o tamanho máximo do campo NomeDoProduto?
+        O tamanho máximo do campo "NomeDoProduto" na tabela "Produtos" é varchar (40).
+
+    Qual o tamanho máximo do campo Endereco da tabela "Fornecedores"?
+        O tamanho máximo do campo "Endereco" na tabela "Fornecedores" é varchar (60).
+
+    Qual a chave primária da tabela “Fornecedores”?
+        A chave primária da tabela "Fornecedores" é "IDFornecedores".
+
+    Quais os campos da tabela “Produtos” que são chave estrangeira?
+        Os campos da tabela "Produtos" que são chaves estrangeiras são "IDdoFornecedor", "IDdaCategoria" e "PrecoUnitario".
+
+    Quais são as tabelas envolvidas para verificar o número de vendas feito por um funcionário?
+        As tabelas envolvidas são "Funcionario", "Pedidos" e "Detalhe_do_pedido".
+
+    Quais são as tabelas envolvidas para verificar a origem de um produto, ou seja, qual o país de origem?
+        Não há informações sobre a origem do produto no esquema fornecido.
+
+    Qual a tabela é possível verificar o total já vendido?
+        A tabela "Detalhe_do_pedido" permite verificar o total já vendido.
+
+    Qual a tabela é possível verificar o total de vendas no primeiro trimestre?
+        A tabela "Pedidos" pode ser usada para verificar o total de vendas no primeiro trimestre.
+
+    Qual a tabela apresenta um auto-relacionamento?
+        Não há informações sobre tabelas com auto-relacionamento no esquema fornecido.
+
+    Quais as tabelas envolvidas para identificar quais as transportadoras envolvidas num atendimento de pedidos feitos por um determinado funcionário?
+        As tabelas envolvidas são "Funcionario", "Pedidos" e "Transportadora".
+
+    Qual a tabela e campo envolvidos para identificar todos os clientes da região nordeste?
+        A tabela "Clientes" e o campo "Regiao" podem ser usados para identificar todos os clientes da região nordeste.
+
+    Quais as tabelas envolvidas para identificar a categoria mais vendida?
+        As tabelas envolvidas são "Categorias" e "Detalhe_do_pedido".
+
+    Quais as tabelas envolvidas para identificar os produtos menos vendidos?
+        As tabelas envolvidas são "Produtos" e "Detalhe_do_pedido".
+
+    Existe alguma tabela sem relacionamento?
+        Todas as tabelas parecem ter relacionamentos com outras tabelas por meio de chaves estrangeiras.
+
+    Quais as tabelas envolvidas para identificar a quantidade de produtos vendidos?
+        As tabelas envolvidas são "Produtos" e "Detalhe_do_pedido".
+
+    Quais as tabelas envolvidas para identificar o meu vendedor com maior faturamento e com menor faturamento?
+        As tabelas envolvidas seriam "Funcionario", "Pedidos" e "Detalhe_do_pedido" para calcular o faturamento do vendedor.

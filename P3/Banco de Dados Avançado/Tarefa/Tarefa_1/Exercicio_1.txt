@@ -1,0 +1,30 @@
+1. 8 tabelas.
+2. Tabela pedidos e produto, ambas com 3 chaves.
+3. Fornecedores, Categorias, Funcionarios, Clientes e Transportadora.
+4. CodigodoCliente.
+5. CodigodoProduto.
+6. Varchar(60)
+7. Funcionario, Fornecedores, Cliente e Transportadora.
+8. Funcionarios com 17 campos.
+9. Transportadora com 3 campos.
+10. A tabela Pedidos.
+11. CodigodaTransportadora
+12. IDDetalhe_do_Pedido
+13. CodidodoClientes
+14. CodigodaCategoria
+15. 40.
+16. 60
+17. CodigodoFornecedores
+18. CodigodoFornecedor, CodigodaCategoria, PrecoUnitario.
+19. Pedidos, Detalhe_do_Pedido e Funcionarios
+20. Produtos e Fornecedores
+21. Detalhe do Pedido
+22. Pedidos
+23. Nenhuma.
+24. Funcionarios, Pedidos e Transportadora
+25. Clientes
+26. Categorias e Detalhe do pedido
+27. Produtos e Detalhe do pedido
+28. Não, todas tem relacionamentos.
+29. Produtos e Detalhe do pedido
+30. Funcionarios, Pedidos e Detalhe do pedido
