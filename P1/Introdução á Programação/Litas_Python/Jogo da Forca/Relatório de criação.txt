@@ -1,0 +1,23 @@
+1-Comecei  importando a biblioteca 'random'
+
+2-Exibir uma mensagem de 'Bem vindo' e perguntei o nome do jogar e imprimir também na tela.
+
+3-Criei uma função chamada 'escolher palavra' e coloquei um parâmetro nela 'tema' que representa o tema que o jogador irá escolher.
+
+4-Em seguida, abre o arquivo, lê todas as linhas e armazena as palavras em uma lista chamada palavras. A função retorna uma palavra aleatória escolhida dessa lista.
+
+5-Criei outra funcão com o nome 'jogar' que vai ser responsável por controlar o jogo. Em seguida, chama a função escolher_palavra(tema_escolhido) para obter uma palavra aleatória com base no tema escolhido. Também inicializa conjuntos vazios para armazenar as letras certas e erradas, e define o número de tentativas como 6.
+
+6-Em seguida, criei o loop principal do jogo chamado 'while True'.  Ele será executado continuamente até que uma condição de vitória ou derrota seja atendida. No loop, as informações sobre a partida são exibidas, incluindo a forca atual, a palavra em progresso, as letras erradas digitadas e o número de tentativas restantes. Em seguida, solicita ao jogador que digite uma letra e a armazena na variável letra.
+
+7-Logo após a entrada da letra pelo jogador, o código verifica se a letra já foi tentada antes (se está presente no conjunto letras_certas ou letras_erradas). Se sim, exibe uma mensagem informando que a letra já foi tentada e solicita que o jogador tente outra letra.
+Se a letra não tiver sido tentada antes, o código verifica se a letra está presente na palavra. Se sim, adiciona a letra ao conjunto letras_certas. Em seguida, verifica se todas as letras da palavra foram adivinhadas corretamente, comparando o tamanho do conjunto letras_certas com o tamanho do conjunto de letras únicas da palavra (set(palavra)). Se forem iguais, significa que todas as letras foram adivinhadas corretamente, e o jogador venceu o jogo.
+Caso contrário, se a letra não estiver na palavra, ela é adicionada ao conjunto letras_erradas. A variável tentativas é decrementada em 1, representando uma tentativa incorreta. Se o número de tentativas chegar a 0, é exibida uma mensagem informando que o jogo acabou e revelando a palavra correta.
+
+8-Criei outra função chamada 'desenha forca' que será responsavel por desenhar, com base no número de tentativas restantes. O desenho da forca é exibido na tela, dependendo do valor da variável tentativas.
+
+9-Crie outra função chamada 'imprimir palavra' que será responsável por exibir a palavra em progresso, mostrando as letras adivinhadas e espaços em branco para as letras ainda não adivinhadas.
+
+10-Como também criei uma função 'imprimir letras' é responsável por exibir as letras erradas já tentadas pelo jogador.
+
+11-E por fim chamei a função 'jogar'para dá inicio ao jogo.

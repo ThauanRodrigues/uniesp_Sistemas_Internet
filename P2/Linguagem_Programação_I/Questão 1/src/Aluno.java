@@ -1,6 +1,6 @@
 public class Aluno {
   String nome;
-  double n1, n2, n3;
+  int n1, n2, n3;
 
     public double media(double n1, double n2, double n3){
       double media = (n1+n2+n3)/3;
