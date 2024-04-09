@@ -36,9 +36,10 @@ Join Categorias c ON p.CodigoDaCategoria = c.CodigoDaCategoria
 
 -- 7. Exibir o nome do Produto, o Preço Unitário, a quantidade, o Número do Pedido e o nome da Empresa que fez o transporte. --
 Select NomeDoProduto, PrecoUnitario, Quantidade, NumeroDoPedido, NomeDaEmpresa 
-From Produtos p
-Join Detalhes_do_Pedido d ON p.CodigoDoProduto = d.CodigoDoProduto
-Join Fornecedores f ON p.CodigoDoFornecedor = f.CodigoDoFornecedor
+From Produtos pr
+Join Detalhes_do_Pedido d ON pr.CodigoDoProduto = d.CodigoDoProduto
+Join pedidos p ON d.NumeroDoPedido = p.NumeroDoPedido
+Join Transportadoras t ON p.CodigoDaTransportadora = t.CodigoDaTransportadora
 
 
 -- 8. Exibir o nome do Produto, Data do Pedido e o nome da Empresa (Cliente) que fez o pedido. --
