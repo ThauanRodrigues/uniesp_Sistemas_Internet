@@ -1,0 +1,11 @@
+No slide da aula de hoje (página 18 da aula 12 de backend) o trecho a seguir está confundindo alguns alunos.
+
+Mudem isso:
+
+var medico = new Medico (dados)
+    repository.save();
+
+Para isso:
+
+var medico = new Medico (dados);
+repository.save(medico);
